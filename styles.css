@@ -1,0 +1,83 @@
+body {
+  background: url("fotky/background.png") center/cover no-repeat fixed;
+  font-family: "Playfair Display", serif;
+  padding-top: 80px;
+}
+
+.logo {
+  font-family: "Great Vibes", cursive;
+  font-size: 28px;
+}
+
+.hero {
+  text-align: center;
+  padding: 120px 20px 80px 20px;
+}
+
+.hero h1 {
+  font-family: "Great Vibes", cursive;
+  font-size: 72px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  letter-spacing: 3px;
+  margin-bottom: 40px;
+}
+
+.hero-box {
+  background: rgba(255, 255, 255, 0.9);
+  max-width: 700px;
+  margin: auto;
+  padding: 35px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.mainbox {
+  background: rgba(255, 255, 255, 0.92);
+  padding: 60px;
+  margin-top: 40px;
+  margin-bottom: 80px;
+  border-radius: 12px;
+  max-width: 900px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  margin-bottom: 70px;
+}
+
+h2 {
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.highlight {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.list li {
+  margin-bottom: 6px;
+}
+
+.note {
+  margin-top: 10px;
+  font-style: italic;
+}
+
+.account {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.formbox {
+  background: #f7f7f7;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.nav-link {
+  font-size: 14px;
+}
