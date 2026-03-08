@@ -17,6 +17,7 @@
     />
 
     <link rel="stylesheet" href="styles.css" />
+    <script src="formular.js"></script>
   </head>
 
   <body>
@@ -39,10 +40,16 @@
           <ul class="navbar-nav ms-auto">
             <li class="nav-item"><a class="nav-link" href="#uvod">Úvod</a></li>
             <li class="nav-item">
+              <a class="nav-link" href="#cas">Čas obřadu</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#misto">Místo</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#doprava">Doprava</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#ubytovani">Ubytování</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#program">Program</a>
@@ -53,76 +60,160 @@
             <li class="nav-item">
               <a class="nav-link" href="#dresscode">Dress code</a>
             </li>
-            <li class="nav-item"><a class="nav-link" href="#dary">Dary</a></li>
             <li class="nav-item">
-              <a class="nav-link" href="#formular">Účast</a>
+              <a class="nav-link" href="#prstenove-pravidlo"
+                >Prstenové pravidlo</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#dary">Dary</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#fota-videa">Fotografie a videa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#formular">Formulář</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <header class="hero" id="uvod">
+    <header class="hero oznameni" id="uvod">
       <div class="hero-content">
-        <h1>J + J</h1>
-        <p class="subtitle">oslavují svůj sňatek</p>
-
         <div class="hero-box">
-          <h3>Vítejte na našich svatebních stránkách</h3>
-          <p>
-            Pečlivě si je prosím prostudujte. Najdete zde všechny důležité
-            informace ke svatbě.
-          </p>
-
-          <p class="obrad">
-            Obřad začíná <strong>ve 14:00</strong><br />
-            Dorazte prosím s předstihem.
-          </p>
+          <img src="fotky/oznameni.png" class="img-responsive w-100" />
         </div>
       </div>
     </header>
 
-    <div class="container mainbox">
+    <div class="mainContent container mainbox">
+      <section id="cas">
+        <h2>Čas obřadu</h2>
+        <p>
+          Čas obřadu je stanoven na 14:00, vyrazte raději s předstihem, ať o nic
+          nepřijdete. Na Statku se bude někdo určitě pohybovat již od dopoledne.
+        </p>
+      </section>
+
       <section id="misto">
         <h2>Místo</h2>
 
-        <p class="highlight">Statek Střednice č.p. 9</p>
-
-        <p>
-          <a href="http://www.statekstrednice.cz/" target="_blank"
-            >www.statekstrednice.cz</a
+        <div class="d-grid">
+          <a
+            href="http://www.statekstrednice.cz/"
+            class="btn svatba-button"
+            target="_blank"
+            >statekstrednice.cz</a
           >
-        </p>
+        </div>
+        <br />
+        <p>Střednice 9, 277 24 Vysoká u Mělníka</p>
 
         <p>
           Jedná se o otevřenou stodolu s velkou pastvinou, takže místa bude dost
           pro všechny.
         </p>
+
+        <div class="col-md-12 d-flex justify-content-center pb-3">
+          <img
+            class="mapa card-img-top"
+            src="fotky/mapaStatek.jpg"
+            alt="mapa"
+          />
+        </div>
       </section>
 
       <section id="doprava">
         <h2>Doprava</h2>
 
+        <h5>Kudy za námi?</h5>
+        <br />
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-6 pt-2">
             <h5>🚗 Autem</h5>
             <p>Příjezd je možný přímo ke statku.</p>
           </div>
 
-          <div class="col-md-6">
+          <div class="col-md-6 pt-2">
             <h5>🚌 Autobusem</h5>
-            <p>Autobus 474 z Mělníka ve 12:22 – příjezd 12:40.</p>
+            <p>
+              Autobus číslo 474, ve 12:22 ze zastávky
+              <b>Mělník, autobusové nádraží</b> - příjezd do zastávky
+              <b>Vysoká, Střednice</b> ve 12:40.
+            </p>
           </div>
 
-          <div class="col-md-6">
+          <div class="col-md-6 pt-2">
             <h5>🚆 Vlakem</h5>
             <p>Vlak do Mělníka a poté autobus nebo naše taxi.</p>
           </div>
 
-          <div class="col-md-6">
-            <h5>🚕 Taxi</h5>
-            <p>Po celý den bude jezdit náš šofér mezi Mělníkem a statkem.</p>
+          <div class="col-md-6 pt-2">
+            <h5>🚆 Vlakem pro dobrodruhy</h5>
+            <p>
+              Do <b>Lhotky u Mělníka</b> a pokračovat k nám lesem po zaniklé
+              trati (4,5 km), kudy se dříve vozila řepa. Odjezd z Mělníka ve
+              12:08.
+            </p>
           </div>
+          <div class="col-md-12 pt-2">
+            <h5>🚕 Taxi</h5>
+            <p>
+              Po celý den bude k dispozici náš osobní šofér, který bude bude
+              pendlovat mezi Mělníkem a Statkem. Tento odvoz je pro info všechny
+              pozvané hosty samozřejmě zdarma.
+            </p>
+            <p><b>Kontakt na šoféra: JEŠTĚ NEVIM KDO</b></p>
+          </div>
+        </div>
+      </section>
+
+      <section id="ubytovani">
+        <h2>Ubytování</h2>
+
+        <p>
+          Pastvina u stodoly je dostatečně velká k postavení mnoha stanů (stany
+          nezajišťujeme), aut, karavanů i autobusu. Zde je ubytování i parkování
+          zdarma.
+        </p>
+        <p>
+          Pro komfortnější ubytování přikládáme odkazy s tipy na ubytování na
+          Mělníku. Případně si můžete najít něco poblíž. Hradíte si sami.
+        </p>
+
+        <div class="d-grid">
+          <a
+            href="https://www.campmelnik.cz/"
+            class="btn svatba-button"
+            target="_blank"
+            >campmelnik.cz</a
+          >
+          <br />
+          <a
+            href="https://hotel-jaro.hotel.cz/"
+            class="btn svatba-button"
+            target="_blank"
+            >hotel-jaro.hotel.cz</a
+          ><br />
+          <a
+            href="https://www.dobrykanec.cz/rezervace-ubytovani"
+            target="_blank"
+            class="btn svatba-button"
+            >dobrykanec.cz</a
+          ><br />
+          <a
+            href="http://www.hotel-olympionik.cz/index.php/cs/"
+            target="_blank"
+            class="btn svatba-button"
+            >hotel-olympionik.cz</a
+          ><br />
+          <a
+            href="https://www.pizzeriapiranha.cz/pension"
+            target="_blank"
+            class="btn svatba-button"
+            >pizzeriapiranha.cz</a
+          ><br />
         </div>
       </section>
 
@@ -130,83 +221,364 @@
         <h2>Program</h2>
 
         <p>
-          Po obřadu se můžete těšit na lidovou hudbu, folklorní vystoupení,
-          raut, jízdu na koni a oslíkovi Pepíkovi, tombolu, výuku tanců večerní
-          čepení nevěsty a DJ.
+          Po obřadu se můžete těšit na lidovou hudbu, vystoupení folklorních
+          souborů, bohatý raut, jízdu na koni a oslíkovi Pepíkovi, tombolu,
+          výuku tanců, venkovní i vnitřní aktivity a hry a večerní tradiční
+          čepení nevěsty. Postaráno bude i o děti! V průběhu dne i večera se o
+          zábavu postará náš DJ!
         </p>
 
-        <p>Pro děti bude připraven dětský koutek.</p>
+        <p>
+          <b>Dětský koutek:</b> máte nápady nebo vybavení vhodné na aktivity pro
+          děti? Kontaktujte naši kamarádku Adélku, která se bude starat o
+          program pro vaše drahé ratolesti.
+        </p>
+        <p>Adéla Kramná - tel.: DOPLNIT (preferuje kontakt přes whatsapp)</p>
       </section>
 
       <section id="jidlo">
         <h2>Jídlo a pití</h2>
 
-        <ul class="list">
-          <li>rauty – sladké i slané</li>
-          <li>vegetariánské a bezlaktózové varianty</li>
-          <li>nealko nápoje, káva, čaj</li>
-          <li>pivo a víno</li>
-        </ul>
-
-        <p class="note">Tvrdý alkohol nebude k dispozici.</p>
+        <p>
+          K dispozici bude raut do vyjedení zásob. Sladké, slané i bez laktózy a
+          vegetariánské. Pití: bude velký výběr nealkoholických nápojů, káva,
+          čaj…
+        </p>
+        <p>Z alkoholických nápojů budeme podávat pouze čepované pivo a víno.</p>
+        <div class="no-alcohol col-md-12 rounded text-light text-center">
+          DŮLEŽITÉ: Chceme, abyste si naši svatbu pamatovali, proto nebude k
+          dispozici tvrdý alkohol. V případě vaší potřeby si můžete přinést
+          vlastní. Myslete prosím na to, že svatby se účastní děti a věřící
+          lidé. Rádi bychom předešli neshodám apod.
+        </div>
       </section>
 
       <section id="dresscode">
         <h2>Dress code</h2>
 
         <p>
-          Svatba bude částečně folklorní. Pokud máte kroj nebo folklorní
-          doplňky, budeme rádi, když si je vezmete.
+          Naše oficiální svatba v úzkém rodinném kruhu již proběhla. Tuto druhou
+          svatbu jsme pojali spíše jako oslavu našeho sňatku s našimi
+          nejbližšími a přáteli.
         </p>
+        <p>
+          Svatba bude napůl folklorní, pokud máte možnost a chcete, nevěsta
+          uvítá na svatbě kroje/krojové součásti nebo folklorní doplňky. Není to
+          však podmínkou.
+        </p>
+        <p>
+          Jelikož se nejedná o oficiální svatbu, oblečte se dle vaší libosti a
+          představivosti, hlavně abyste se <b>VY</b> cítili dobře. Myslete však
+          na to, že svatba bude ve stodole s nerovnou podlahou a na pastvině.
+          Nedoporučujeme tedy podpatky.
+        </p>
+        <p>
+          Červnové večery mohou být ještě chladnější, raději si vezměte i něco
+          teplého na večer.
+        </p>
+      </section>
+
+      <section id="prstenove-pravidlo">
+        <h2>Prstenové pravidlo</h2>
 
         <p>
-          Svatba probíhá ve stodole a na pastvině – nedoporučujeme podpatky.
-          Večer může být chladno, vezměte si něco teplejšího.
+          Přemýšlíte, jestli na svatbu přivést s sebou svého partnera, ikdyž
+          nebyl pozvaný? Máme jednoduché pravidlo. Pokud nebyl pozvaný a jste
+          zasnoubení nebo manželé, vezměte ho s sebou. Pokud není pozvaný a
+          pouze spolu chodíte/žijete bez oddání, zeptejte se nevěsty nebo
+          ženicha, zda ho s sebou můžete vzít. Preferujeme ale na svatbě pouze
+          pozvané hosty z důvodu poplatku 100Kč./1os. pro majitele Statku.
         </p>
       </section>
 
       <section id="dary">
         <h2>Dary</h2>
 
-        <p>Vaše přítomnost je pro nás největším darem.</p>
-
         <p>
-          Pokud byste nás přesto chtěli obdarovat, budeme vděční za finanční
-          příspěvek.
+          Naši milí hosté, Vaše přítomnost na naší svatbě je pro nás tím
+          největším darem. Pokud byste nás přesto chtěli obdarovat, budeme
+          vděční za finanční příspěvek. Děkujeme!
         </p>
 
         <p class="account">1559521004 / 5500</p>
+        <div class="col-md-12 d-flex justify-content-center pb-3">
+          <img class="qr card-img-top" src="fotky/qr.png" alt="mapa" />
+        </div>
+
+        <p>
+          Pokud byste nám rádi pomohli raději prakticky než finančně, budeme
+          rádi za nějaké dobroty, které připravíte na náš raut. Abychom měli
+          pestré občerstvení, přikládáme odkaz na google tabulky, kde se můžete
+          podívat, co už někdo chystá a vyplnit, co byste rádi přichystali vy.
+          Moc vám děkujeme!
+        </p>
+        <p>
+          Upozornění: tabulky jdou vyplnit bez problémů na PC. Na mobilu lze
+          vyplnit pouze s aplikací google sheets (tabulky). V případě nouze
+          napište nevěstě.
+        </p>
+        <div class="d-grid">
+          <a
+            href="https://docs.google.com/spreadsheets/d/1053JAsqBvRX18lKQNBRhxk2bHE0MYdDsbib
+VOYruAPI/edit?usp=drivesdk"
+            target="_blank"
+            class="btn svatba-button"
+            >ODKAZ NA TABULKU</a
+          >
+        </div>
+      </section>
+
+      <section id="fota-videa">
+        <h2>Fotografie a videa</h2>
+        <p>
+          Budeme moc rádi, pokud s námi budete sdílet vaše zážitky ze svatby (i
+          z cesty na svatbu). Označujte nás na vašich stories nebo příspěvcích
+          na Instagramu
+          <b
+            ><a
+              href="https://www.instagram.com/vareckovi?igsh=bHpvNzAxZzJneTdz"
+              class="ig"
+              targer="_blank"
+              >@vareckovi</a
+            ></b
+          >.
+        </p>
       </section>
 
       <section id="formular">
         <div class="formbox">
           <h2>Potvrzení účasti</h2>
 
-          <form action="https://formsubmit.co/your@email.cz" method="POST">
+          <form
+            action="https://formsubmit.co/adela.reslerova94@gmail.com"
+            method="POST"
+          >
             <div class="mb-3">
-              <label class="form-label">Jméno</label>
-              <input type="text" name="name" class="form-control" required />
+              <label class="form-label">Kolik vás přijede?</label>
+              <p>V další otázce vypište jméno/a hosta/ů.</p>
+              <input
+                type="number"
+                name="pocet-hostu"
+                class="form-control"
+                required
+              />
             </div>
 
             <div class="mb-3">
-              <label class="form-label">Email</label>
-              <input type="email" name="email" class="form-control" required />
+              <label class="form-label"
+                >Jméno/a a příjmení hosta/ů (u dětí prosím uveďte věk z důvodu
+                naplánování vhodných aktivit pro ně)</label
+              >
+              <textarea
+                class="form-control"
+                name="jmena-a-prijmeni"
+                required
+              ></textarea>
             </div>
 
             <div class="mb-3">
-              <label class="form-label">Zúčastním se</label>
-              <select class="form-control" name="ucast">
-                <option>Ano</option>
-                <option>Ne</option>
-              </select>
+              <label class="form-label">Přijedu/přijedeme...</label><br />
+
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="doprava[]"
+                  value="autem"
+                  id="autem"
+                />
+                <label class="form-check-label" for="autem"> Autem </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="doprava[]"
+                  value="autobusem_do_strednic"
+                  id="autobusem_do_strednic"
+                />
+                <label class="form-check-label" for="autobusem_do_strednic">
+                  Autobusem do Střednic
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="doprava[]"
+                  value="autobusem_na_melnik_a_pak_potrebuji_odvoz"
+                  id="autobusem_na_melnik_a_pak_potrebuji_odvoz"
+                />
+                <label
+                  class="form-check-label"
+                  for="autobusem_na_melnik_a_pak_potrebuji_odvoz"
+                >
+                  Autobusem na Mělník a pak potřebuji odvoz
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="doprava[]"
+                  value="vlakem_na_melnik_a_pak_potrebuji_odvoz"
+                  id="vlakem_na_melnik_a_pak_potrebuji_odvoz"
+                />
+                <label
+                  class="form-check-label"
+                  for="vlakem_na_melnik_a_pak_potrebuji_odvoz"
+                >
+                  Vlakem na Mělník a pak potřebuji odvoz
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="doprava[]"
+                  value="vlakem_do_lhotky_a_pak_potrebuji_odvoz"
+                  id="vlakem_do_lhotky_a_pak_potrebuji_odvoz"
+                />
+                <label
+                  class="form-check-label"
+                  for="vlakem_do_lhotky_a_pak_potrebuji_odvoz"
+                >
+                  Vlakem do Lhotky a pak přijdu pěšky
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="doprava[]"
+                  value="autobusem_s_kadulou_az_na_misto"
+                  id="autobusem_s_kadulou_az_na_misto"
+                />
+                <label
+                  class="form-check-label"
+                  for="autobusem_s_kadulou_az_na_misto"
+                >
+                  Autobusem s Kadulou až na místo
+                </label>
+              </div>
+
+              <div class="form-check d-flex align-items-center gap-2">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="doprava[]"
+                  value="doprava_jine"
+                  id="doprava_jine"
+                />
+                <label class="form-check-label" for="doprava_jine">
+                  Jiné:
+                </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="doprava_jine"
+                  id="doprava_jine_text"
+                  placeholder="Upřesněte"
+                  disabled
+                />
+              </div>
             </div>
 
             <div class="mb-3">
-              <label class="form-label">Zpráva</label>
-              <textarea class="form-control" name="message"></textarea>
+              <label class="form-label">Přespání</label><br />
+
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="prespani[]"
+                  value="nebudu_prespavat"
+                  id="nebudu_prespavat"
+                />
+                <label class="form-check-label" for="nebudu_prespavat">
+                  Nebudu přespávat
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="prespani[]"
+                  value="u_stodoly_na_pastvine"
+                  id="u_stodoly_na_pastvine"
+                />
+                <label class="form-check-label" for="u_stodoly_na_pastvine">
+                  Přespím u stodoly na pastvině (ve vlastním stanu, v autě, pod
+                  širákem...)
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="prespani[]"
+                  value="zaridim_si_spani_pobliz"
+                  id="zaridim_si_spani_pobliz"
+                />
+                <label class="form-check-label" for="zaridim_si_spani_pobliz">
+                  Zařídím si spaní někde poblíž (viz odkazy na ubytování na
+                  webu)
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="prespani[]"
+                  value="mam_zarizeno_od_novomanzelu"
+                  id="mam_zarizeno_od_novomanzelu"
+                />
+                <label
+                  class="form-check-label"
+                  for="mam_zarizeno_od_novomanzelu"
+                >
+                  Mám zařízené přespání od novomanželů
+                </label>
+              </div>
+
+              <div class="form-check d-flex align-items-center gap-2">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="prespani[]"
+                  value="prespani_jine"
+                  id="prespani_jine"
+                />
+                <label class="form-check-label" for="prespani_jine">
+                  Jiné:
+                </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="prespani_jine"
+                  placeholder="Upřesněte"
+                  id="prespani_jine_text"
+                  disabled
+                />
+              </div>
             </div>
 
-            <button class="btn btn-dark w-100">Odeslat</button>
+            <div class="mb-3">
+              <label class="form-label"
+                >Vypište alergie/intolerance/vege...</label
+              >
+              <textarea class="form-control" name="podrobnosti"></textarea>
+            </div>
+
+            <button type="submit" class="btn svatba-button w-100">Odeslat</button>
           </form>
         </div>
       </section>

@@ -4,6 +4,10 @@ body {
   padding-top: 80px;
 }
 
+/* .mainContent {
+  text-align: center;
+} */
+
 .logo {
   font-family: "Great Vibes", cursive;
   font-size: 28px;
@@ -31,7 +35,7 @@ body {
   margin: auto;
   padding: 35px;
   border-radius: 10px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 30px 10px rgba(0, 0, 0, .8);
 }
 
 .mainbox {
@@ -41,11 +45,30 @@ body {
   margin-bottom: 80px;
   border-radius: 12px;
   max-width: 900px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 30px 10px rgba(0, 0, 0, .8);
 }
 
 section {
   margin-bottom: 70px;
+}
+
+#cas,
+#misto,
+#doprava,
+#ubytovani,
+#program,
+#jidlo,
+#dresscode,
+#prstenove-pravidlo,
+#dary,
+#fota-videa,
+#formular h2 {
+  text-align: center;
+  scroll-margin-top: 80px;
+}
+
+#formular {
+  scroll-margin-top: 80px;
 }
 
 h2 {
@@ -72,6 +95,11 @@ h2 {
   font-weight: 600;
 }
 
+.mapa {
+  max-width: 50% !important;
+
+}
+
 .formbox {
   background: #f7f7f7;
   padding: 30px;
@@ -80,4 +108,38 @@ h2 {
 
 .nav-link {
   font-size: 14px;
+}
+
+.oznameni {
+  padding-top: 30px !important;
+}
+
+.svatba-button {
+  background-color: #16428d;
+  color: white;
+}
+
+.svatba-button:hover {
+  background-color: #167d8d;
+  color: white;
+}
+
+.qr {
+  max-width: 20% !important;
+}
+
+.no-alcohol {
+  background-color: #16428d;
+}
+
+.ig {
+  color: #16428d;
+}
+
+.ig:hover {
+  color: #167d8d;
+}
+
+.form-label {
+  font-weight: bold;
 }
